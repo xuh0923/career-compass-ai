@@ -67,12 +67,20 @@ export default function Home() {
               一个面向计算机大学生的 AI 学习与求职共驾系统。
             </p>
           </div>
-          <a
-            href="#github"
-            className="rounded-full border border-white/15 px-4 py-2 text-sm text-white/82 transition hover:border-[var(--color-accent)] hover:text-white"
-          >
-            GitHub Ready
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="/diagnosis"
+              className="rounded-full bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-[var(--color-ink)] transition hover:bg-[var(--color-accent-strong)]"
+            >
+              体验诊断 MVP
+            </a>
+            <a
+              href="#github"
+              className="rounded-full border border-white/15 px-4 py-2 text-sm text-white/82 transition hover:border-[var(--color-accent)] hover:text-white"
+            >
+              GitHub Ready
+            </a>
+          </div>
         </header>
 
         <div className="grid gap-14 py-16 lg:grid-cols-[1.25fr_0.75fr] lg:items-end lg:py-20">
@@ -92,10 +100,10 @@ export default function Home() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#advantages"
+                href="/diagnosis"
                 className="rounded-full bg-[var(--color-accent)] px-6 py-3 text-sm font-medium text-[var(--color-ink)] transition hover:bg-[var(--color-accent-strong)]"
               >
-                看项目优势
+                开始目标诊断
               </a>
               <a
                 href="#mvp"
@@ -127,6 +135,12 @@ export default function Home() {
                 <p className="text-sm text-white/56">第一阶段结果</p>
                 <p className="mt-2 text-xl font-medium text-white">
                   学习路线、项目清单、求职节奏、GitHub 输出
+                </p>
+              </article>
+              <article className="rounded-3xl border border-[var(--color-mint)]/18 bg-[var(--color-mint)]/10 p-5">
+                <p className="text-sm text-white/56">现在可体验</p>
+                <p className="mt-2 text-xl font-medium text-white">
+                  目标诊断表单 + 30 / 60 / 90 天路线生成
                 </p>
               </article>
             </div>
